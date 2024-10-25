@@ -3,7 +3,7 @@ spring:
     name: api1
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3316/bootdb2
+    url: jdbc:mariadb://localhost:3306/bootdb2
     username: bootdb2user
     password: bootdb2user
 
@@ -20,3 +20,13 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 20MB
+      location: upload
+      enabled: true
+org:
+  zerock:
+    upload:
+      path: upload

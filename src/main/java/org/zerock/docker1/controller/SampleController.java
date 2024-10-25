@@ -24,6 +24,6 @@ public class SampleController {
 
         log.info("===============");
 
-        return new String[]{"Ha", "Jaemin", "hjm", dataSource.toString()};
+        return new String[]{"LEE", "Sangwon", "lsw", dataSource.toString()};
     }
 }
